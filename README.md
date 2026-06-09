@@ -44,6 +44,8 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
+The virtual environment step is optional but recommended. It keeps this tool's Python dependencies inside the project instead of installing them into your system Python. After `source .venv/bin/activate`, `python` and `pip` usually point to the virtual environment; the examples below use `python3` so the commands are explicit on macOS and Linux.
+
 Edit `.env`:
 
 ```env
@@ -57,7 +59,7 @@ FORWARD_DESTINATION_EMAIL=destination@gmail.com
 Always start with `--dry-run`.
 
 ```bash
-python -m gmail_forwarder.cli \
+python3 -m gmail_forwarder.cli \
   --subject "Payment confirmation" \
   --from "billing" \
   --since 01-Jan-2026 \
@@ -72,7 +74,7 @@ Dry-run mode prints the messages that would be forwarded but sends nothing.
 After reviewing dry-run output, run the same command without `--dry-run`:
 
 ```bash
-python -m gmail_forwarder.cli \
+python3 -m gmail_forwarder.cli \
   --subject "Payment confirmation" \
   --from "billing" \
   --since 01-Jan-2026 \
