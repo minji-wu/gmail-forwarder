@@ -36,7 +36,7 @@ If Gmail rejects the password, try removing spaces from the app password before 
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/gmail-forwarder.git
+git clone https://github.com/minji-wu/gmail-forwarder.git
 cd gmail-forwarder
 python3 -m venv .venv
 source .venv/bin/activate
