@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.gmail_forwarder_state.json
+forwarded_email_state.json
